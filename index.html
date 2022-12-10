@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sports Score Tracker</title>
+  </head>
+  <body>
+    <h1>Sports Score Tracker</h1>
 
+    <p>
+      <label for="team1-score">Team 1:</label>
+      <input type="number" id="team1-score" value="0">
+    </p>
+
+    <p>
+      <label for="team2-score">Team 2:</label>
+      <input type="number" id="team2-score" value="0">
+    </p>
+
+    <button onclick="updateScores()">Update Scores</button>
+
+    <script>
+      function updateScores() {
+        // Get the values of the score inputs
+        var team1Score = document.getElementById("team1-score").value;
+        var team2Score = document.getElementById("team2-score").value;
+
+        // Update the text of the score labels
+        document.getElementById("team1-score-label").textContent = "Team 1: " + team1Score;
+        document.getElementById("team2-score-label").textContent = "Team
